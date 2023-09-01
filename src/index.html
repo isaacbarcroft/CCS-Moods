@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" type="text/css"/>
+
+  </head>
+
+  <body>
+    <h1>Tell It To Me</h1>
+    <form id="feelingsForm">
+      <fieldset>
+        <legend>
+          How You Feeling?
+        </legend>
+        <div class="container">
+
+          <div class="innerContainer">
+
+            <input type="radio" name="mood" value="Feeling Groovy" />
+            <label>Feeling Groovy</label>
+          </div>
+          <div class="innerContainer">
+          <input type="radio" name="mood" value="Totally Rad" />
+          <label>Totally Rad </label>
+          </div>
+          <div class="innerContainer">
+          <input type="radio" name="mood" value="You Have No Idea" />
+          <label>You Have No Idea </label>
+          </div>
+          <div class="innerContainer">
+          <input type="radio" name="mood" value="Let's Freaking Go" />
+          <label>Let's Freaking Go</label>
+          </div>
+          <div class="innerContainer">
+          <input type="radio" name="mood" value="Nah" />
+          <label>Nah </label>
+          </div>
+          <dvi>
+            
+            <button id="submitFeelings" type="button">Submit Feelings</button>
+          </dvi>
+        </div>
+      </fieldset>
+    </form>
+    <p>
+      My current feelings are:
+      <span id="myFeelings" class="default-mood mood"></span>
+    </p>
+
+    <script type="module" src="./index.mjs" ></script>
+  </body>
+</html>
